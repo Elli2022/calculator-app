@@ -1,103 +1,69 @@
+# Precision Calculator
 
+A modernized calculator app built with TypeScript and Vite. This project revisits an earlier frontend exercise and turns it into a cleaner, more production-minded implementation with a better toolchain, stronger UI decisions, and a testable calculation engine.
 
-# FE22-js2-mp4-eleonora-nocentini
+## Live Demo
 
-# Calculator Project
+[elli2022.github.io/precision-calculator](https://elli2022.github.io/precision-calculator/)
 
-A simple calculator application built using TypeScript and Parcel bundler. This calculator allows users to perform basic arithmetic operations with a user-friendly graphical interface.
+## Highlights
 
-## Table of Contents
+- Responsive interface with a more polished visual direction
+- Keyboard support for numbers, operators, `Enter`, `Backspace`, `%`, and `Escape`
+- Safer calculation flow with clear error handling for invalid operations
+- Separated calculator logic that can be tested independently from the UI
+- Fast modern build setup with Vite
 
-* Features
-* Requirements
-* Installation
-* Usage
-* Contributing
-* License
+## Stack
 
-## Features
+- TypeScript
+- Vite
+- Vitest
+- ESLint
+- Vanilla HTML and CSS
 
-* Basic arithmetic operations (+, -, *, /)
-* User-friendly GUI with numbers 0-9 and arithmetic operators
-* Written in TypeScript
-* Bundled with Parcel
-* At least one image included in the repo
+## Getting Started
 
-## Requirements
-
-* Node.js
-* npm
-* Parcel bundler
-* TypeScript
-
-## Installation
-
-1. Clone the repository:
-
-```
-git clone https://github.com/yourusername/calculator-project.git
-cd calculator-project
-```
-2. Install dependencies:
-
-```
+```bash
 npm install
-```
-
-3. Build the project:
-
-```
-npm run build
-```
-
-4. Start the development server:
-
-```
 npm run dev
 ```
 
-## Usage
+Open the local development URL shown in the terminal to use the app.
 
-1. Open the calculator application in your web browser.
-2. Click on the numbers and arithmetic operators to form an expression (e.g., 15 / 3).
-3. Press the = button to perform the calculation.
-4. The result will be displayed on the screen.
+## Available Scripts
 
-## Contributing
-1. Fork the repository on GitHub.
-2.Clone your fork locally:
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run test
+npm run lint
+npm run typecheck
+```
 
-```
-git clone https://github.com/yourusername/calculator-project.git
-cd calculator-project
-```
-3. Create a new branch for your feature or bugfix:
-```
-git checkout -b my-new-feature
-```
-4. Make your changes, and commit them with a descriptive commit message:
-```
-git add .
-git commit -m "Add my new feature"
-```
-5. Push your branch to your fork:
-```
-git push origin my-new-feature
-````
-6. Create a Pull Request on GitHub, comparing your fork's branch with the original repository's main branch.
+## Project Structure
 
-Please ensure that your code follows the project's coding style and that all tests are passing before submitting a Pull Request.
+```text
+.
+├── index.html
+├── src
+│   ├── calculator.ts
+│   ├── calculator.test.ts
+│   ├── main.ts
+│   ├── styles.css
+│   └── images
+└── docs
+```
 
-## Acknowledgement
-* The creators of TypeScript for providing a strongly-typed language built on JavaScript
-* The maintainers of Parcel for creating a fast and easy-to-use bundler
-* All contributors who have helped improve and maintain this project
+## Notes
+
+- Production builds are written to `docs/` to keep GitHub Pages deployment simple.
+- The current implementation focuses on a strong four-function calculator experience with percentage support and keyboard-friendly interactions.
 
 ## Future Improvements
 
-* Add support for more advanced arithmetic operations (e.g., exponentiation, square root, logarithms)
-* Implement a history feature to store past calculations
-* Allow keyboard input for faster number and operator entry
-* Create unit tests for each component to ensure code reliability
-* 
-We welcome any suggestions and contributions to further enhance the project. Please feel free to open an issue or submit a Pull Request with your ideas.
+- Add calculation history
+- Add memory controls
+- Add theme switching and saved preferences
+- Expand test coverage for more interaction flows
