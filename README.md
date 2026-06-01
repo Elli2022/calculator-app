@@ -1,12 +1,12 @@
-# Precision Calculator
+# FE22 JavaScript 2 — Mini Project 4 Calculator
 
-A responsive calculator web app built with **TypeScript** and **Vite**. It started as a frontend school assignment and was later modernized into a cleaner, production-minded codebase with keyboard support, separated calculation logic, and automated tests.
+A responsive calculator web app built with **TypeScript** and **Vite**. It started as **FE22 JavaScript 2, Mini Project 4** (`FE22-js2-mp4`) and was later modernized into a cleaner, production-minded codebase with keyboard support, separated calculation logic, and automated tests.
 
-[![Live demo](https://img.shields.io/badge/demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://precision-calculator-elli2022.netlify.app)
+[![Live demo](https://img.shields.io/badge/demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://fe22-js2-mp4-calculator.netlify.app)
 
 ## Live demo
 
-**https://precision-calculator-elli2022.netlify.app**
+**https://fe22-js2-mp4-calculator.netlify.app**
 
 ## Background
 
@@ -46,8 +46,8 @@ The current version is a ground-up rebuild that keeps the same core idea while i
 ### Install and run locally
 
 ```bash
-git clone https://github.com/Elli2022/precision-calculator.git
-cd precision-calculator
+git clone https://github.com/Elli2022/fe22-js2-mp4-calculator.git
+cd fe22-js2-mp4-calculator
 npm install
 npm run dev
 ```
