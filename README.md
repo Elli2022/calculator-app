@@ -1,49 +1,88 @@
 # FE22 JavaScript 2 — Mini Project 4 Calculator
 
-A responsive calculator web app built with **TypeScript** and **Vite**. It started as **FE22 JavaScript 2, Mini Project 4** (`FE22-js2-mp4`) and was later modernized into a cleaner, production-minded codebase with keyboard support, separated calculation logic, and automated tests.
+<p align="center">
+  <a href="https://fe22-js2-mp4-calculator.netlify.app"><img src="https://img.shields.io/badge/Live%20demo-Netlify-2563eb?style=for-the-badge&logo=netlify&logoColor=white" alt="Live demo on Netlify"></a>
+  <img src="https://img.shields.io/badge/Program-FE22-2563eb?style=for-the-badge" alt="FE22 program">
+  <img src="https://img.shields.io/badge/Course-JavaScript%202-2563eb?style=for-the-badge" alt="JavaScript 2">
+  <img src="https://img.shields.io/badge/Assignment-Mini%20Project%204-2563eb?style=for-the-badge" alt="Mini Project 4">
+</p>
 
-[![Live demo](https://img.shields.io/badge/demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://fe22-js2-mp4-calculator.netlify.app)
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-5-2563eb?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-6-2563eb?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Vitest-3-2563eb?style=for-the-badge" alt="Vitest">
+  <img src="https://img.shields.io/badge/ESLint-9-2563eb?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint">
+  <img src="https://img.shields.io/badge/License-ISC-2563eb?style=for-the-badge" alt="ISC License">
+</p>
 
-## Live demo
+<p align="center">
+  A responsive calculator built with <strong>TypeScript</strong> and <strong>Vite</strong>. Originally submitted in March 2023 as a frontend school assignment, then rebuilt with clearer architecture, keyboard support, and automated tests.
+</p>
 
-**https://fe22-js2-mp4-calculator.netlify.app**
+<p align="center">
+  <strong><a href="https://fe22-js2-mp4-calculator.netlify.app">https://fe22-js2-mp4-calculator.netlify.app</a></strong>
+</p>
 
-## Background
+---
 
-This repository began in March 2023 as **FE22 JavaScript 2 — Mini Project 4** (`FE22-js2-mp4`), a coursework calculator built with TypeScript and Parcel. It was **not** a final thesis project (`slutprojekt`) and **not** part of JavaScript 1 — the original repo name and README used the `js2` / `mp4` course naming convention.
+## About the project
 
-The current version is a ground-up rebuild that keeps the same core idea while improving structure, tooling, accessibility, and deployment.
+| | |
+| --- | --- |
+| **School context** | **FE22 JavaScript 2 — Mini Project 4** (`FE22-js2-mp4`) |
+| **Type** | Course mini project — not a final thesis project |
+| **Original stack** | TypeScript + Parcel (2023) |
+| **Current stack** | TypeScript + Vite + Vitest |
+| **Hosting** | [Netlify](https://fe22-js2-mp4-calculator.netlify.app) only — **GitHub Pages is not used** |
+
+The app covers basic arithmetic (`+`, `−`, `×`, `÷`), percentages, expression preview, and keyboard-friendly controls. Calculator logic lives in a separate module so the UI and math can be tested independently.
+
+---
 
 ## Screenshots
 
-| Desktop | Mobile |
-| --- | --- |
-| ![Desktop view of Precision Calculator](./screenshots/desktop.png) | ![Mobile view of Precision Calculator](./screenshots/mobile.png) |
+### Desktop
+
+![Desktop layout with hero panel and calculator](./screenshots/desktop.png)
+
+### Calculation in action
+
+![Calculator showing a completed expression and result](./screenshots/calculation.png)
+
+### Mobile
+
+![Mobile-responsive calculator layout](./screenshots/mobile.png)
+
+---
 
 ## Features
 
 - Four-function calculator with percentage support
-- Keyboard input for digits, operators, `Enter`, `Backspace`, `%`, and `Escape`
-- Expression preview and clear error handling for invalid operations
-- Calculation engine separated from the UI for focused unit tests
-- Responsive layout with a keyboard-first interaction model
+- Keyboard shortcuts: digits, operators, `Enter`, `Backspace`, `%`, `Escape`
+- Live expression line and readable error states
+- Testable calculation engine decoupled from the DOM
+- Responsive layout for desktop and mobile
+
+---
 
 ## Tech stack
 
-- TypeScript
-- Vite
-- Vitest
-- ESLint
-- Semantic HTML and vanilla CSS
+- **TypeScript** — typed application logic
+- **Vite** — dev server and production bundling
+- **Vitest** — unit tests for the calculator engine
+- **ESLint** — linting
+- **HTML & CSS** — semantic markup, no UI framework
+
+---
 
 ## Getting started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) 20 or newer
+- [Node.js](https://nodejs.org/) 20+
 - npm
 
-### Install and run locally
+### Install and run
 
 ```bash
 git clone https://github.com/Elli2022/fe22-js2-mp4-calculator.git
@@ -52,44 +91,52 @@ npm install
 npm run dev
 ```
 
-Open the local URL shown in the terminal (typically `http://localhost:5173`).
+Open the URL from the terminal (usually `http://localhost:5173`).
 
 ### Scripts
 
 | Command | Description |
 | --- | --- |
-| `npm run dev` | Start the Vite dev server |
-| `npm run build` | Production build to `dist/` |
-| `npm run preview` | Preview the production build locally |
-| `npm run test` | Run Vitest unit tests |
-| `npm run lint` | Lint the project with ESLint |
-| `npm run typecheck` | Type-check without emitting files |
-| `npm run clean` | Remove build and coverage artifacts |
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production → `dist/` |
+| `npm run preview` | Preview the production build |
+| `npm run test` | Run unit tests |
+| `npm run lint` | Lint source files |
+| `npm run typecheck` | Type-check without emitting |
+| `npm run clean` | Remove `dist/` and `coverage/` |
+
+---
 
 ## Project structure
 
 ```text
 .
-├── index.html          # App shell and calculator markup
-├── netlify.toml        # Netlify build and publish settings
-├── screenshots/        # README visuals
+├── index.html
+├── netlify.toml
+├── screenshots/
 ├── src/
-│   ├── calculator.ts       # Pure calculation logic
-│   ├── calculator.test.ts  # Unit tests
-│   ├── main.ts             # UI wiring and keyboard handling
+│   ├── calculator.ts
+│   ├── calculator.test.ts
+│   ├── main.ts
 │   ├── styles.css
 │   └── images/
-└── dist/               # Production output (generated, not committed)
+└── dist/          # generated — not committed
 ```
+
+---
 
 ## Deployment
 
-The app is deployed on **Netlify** from the `main` branch:
+Production builds publish to **Netlify**:
 
-- **Build command:** `npm run build`
-- **Publish directory:** `dist`
+| Setting | Value |
+| --- | --- |
+| Build command | `npm run build` |
+| Publish directory | `dist` |
 
-`netlify.toml` in the repo defines these settings. GitHub Pages is no longer used for this project.
+Configuration lives in `netlify.toml`. This repository does not deploy to GitHub Pages.
+
+---
 
 ## Testing
 
@@ -97,12 +144,14 @@ The app is deployed on **Netlify** from the `main` branch:
 npm run test
 ```
 
-Tests cover the calculator engine (`src/calculator.test.ts`) independently of DOM code.
+Tests target `src/calculator.ts` so calculation rules stay reliable without driving the browser.
+
+---
 
 ## License
 
-ISC
+ISC — see [package.json](./package.json).
 
 ## Author
 
-Eleonora Nocentini
+**Eleonora Nocentini** — [GitHub @Elli2022](https://github.com/Elli2022)
